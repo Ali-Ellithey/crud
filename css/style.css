@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.add{
+  color: #ffffff;
+  font-family: system-ui;
+  background:rgb(105, 122, 122);
+}
+.block {
+  border-radius: 10px;
+  padding: 10px;
+}
+input:focus{
+  transform: scale(1.02);
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+ #total::before{
+ content: 'Total : ';
+
+}
+#total{
+  background: #f00;
+}
+button:hover{
+  
+  transform: scale(1.3 ,0.5s) !important);
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.currentColor{
+  background-color: currentColor ;
+}
+
+.cadetblue{
+  background-color: cadetblue;
+}
+
+#etn{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(122, 38, 38);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  padding: 5px;
+  
+  
+  /* display: none; */
+}
+#etn:hover{
+  color: #f00;
+}
+@media only screen and (max-width:150px) {
+  .rowData{
+    width: 200px;
+    display: block;
+    margin-bottom: 10px;
+        flex-direction: column;
+
+ 
+  }
+  
+}
+
+@media only screen and (max-width: 350px) {
+  allmain{
+    flex-direction: column;
+  }
+
+
+}

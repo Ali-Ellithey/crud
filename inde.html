@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Crude System</title>
+  </head>
+  <body class="add">
+    <!-- container -->
+    <div class="container allmain">
+      <div class="row cadetblue m-1 block">
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h1 class="text-center text-white">
+              <i class="fa-brands fa-product-hunt"></i> Crude System
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row currentColor m-1 block border-">
+        <div class="col-md-12">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Name product"
+            id="tital"
+          />
+        </div>
+      </div>
+      <div class="row currentColor m-1 block">
+        <div class="col-md-3">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            class="form-control"
+            placeholder="Price"
+            id="Price"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            class="form-control"
+            id="taxes"
+            placeholder="taxes"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            class="form-control"
+            id="ads"
+            placeholder="Ads"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            class="form-control"
+            id="discount"
+            placeholder="Discount"
+          />
+        </div>
+        <div class="col-md-3">
+          <small id="total" class="form-control"></small>
+        </div>
+        <div class="col-md-12 block">
+          <input
+            type="number"
+            class="form-control"
+            id="count"
+            placeholder="Count"
+          />
+        </div>
+        <div class="col md-12 block">
+          <input
+            type="text"
+            class="form-control"
+            id="category"
+            placeholder="categroy"
+          />
+        </div>
+        <div class="col-md-12 text-center pt-2 pb-2">
+          <button id="submit" class="w-75 block btn btn-success">Create</button>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="search"
+              id="search"
+              onkeyup="searchData(this.value)"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <button
+              onclick="getSarceMood(this.id)"
+              id="searchTitle"
+              class="form-control block btn btn-success"
+            >
+              search Tital
+            </button>
+          </div>
+          <div class="col-md-6">
+            <button
+              onclick="getSarceMood(this.id)"
+              id="sarchCategory"
+              class="form-control block btn btn-success"
+            >
+              search Categroy
+            </button>
+          </div>
+        </div>
+        <div class="block mt-3">
+          <div class="clo-md-12 text-center" id="deleteAll"></div>
+        </div>
+      </div>
+      <table class="date table m-auto">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tital</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody id="rowData"></tbody>
+      </table>
+    </div>
+    <div><i class='fas fa-arrow-up ' id="etn" ></i>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
